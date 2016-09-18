@@ -1,0 +1,7 @@
+/build
+/source/sources/work
+/source/sources/wokr
+/source/sources/*.ini
+/source/sources/*.wlf
+/source/sources/wlft*
+.DAV/
