@@ -6,7 +6,7 @@ use ieee.std_logic_unsigned.all;
 entity vhdl11b_ex is
   port (
     gclk0 : in std_logic;
-    sw1 : in std_logic;
+    sw2 : in std_logic;
     sled1a : out std_logic;
     sled1b : out std_logic;
     sled1c : out std_logic;
@@ -21,7 +21,7 @@ architecture rtl of vhdl11b_ex is
   component counter10_ex
     port (
       gclk0 : in std_logic;
-      sw1 : in std_logic;
+      sw2 : in std_logic;
 
       e_in : in std_logic;
       c_in : in std_logic;
@@ -54,7 +54,7 @@ begin
   div_proc : process (gclk0)
   begin
     if (gclk0'event and gclk0 = '1') then
-      if (sw1 = '1') then
+      if (sw2 = '1') then
         d <= (others => '0');
       elsif (d = "1111010000100011111111111") then
         d <= "0000000000000000000000000";
@@ -71,7 +71,7 @@ begin
   i_counter1 : counter10_ex
     port map (
       gclk0 => gclk0,
-      sw1 => sw1,
+      sw2 => sw2,
       e_in => r,
       c_in => c_in1,
       c_out => c_out1,

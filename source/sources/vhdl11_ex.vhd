@@ -63,7 +63,7 @@ begin
     if (gclk0'event and gclk0 = '1') then
       if (reset = '1') then
         ck <= '0';
-      elsif (c = "1010") then
+      elsif ((c = "1010") and (r = '1')) then
         ck <= not ck;
       end if;
     end if;

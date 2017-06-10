@@ -14,7 +14,7 @@ architecture behavioral of vhdl22 is
   component counter10
     port (
       gclk0 : in std_logic;
-      sw1 : in std_logic;
+      sw2 : in std_logic;
 
       e_in : in std_logic;
       c_in : in std_logic;
@@ -26,7 +26,7 @@ architecture behavioral of vhdl22 is
   end component;
 
   signal gclk0 : std_logic;
-  signal sw1   : std_logic;
+  signal sw2   : std_logic;
 
   signal c_error : integer;
   signal c_compare : integer;
@@ -64,9 +64,9 @@ end process;
 -- reset generation
 rst_gen_proc: process
 begin
-  sw1 <= '1';
+  sw2 <= '1';
   wait for 18 ns;
-  sw1 <= '0';
+  sw2 <= '0';
   wait;
 end process;
 
@@ -75,7 +75,7 @@ pace_proc: process(gclk0)
   variable v_pace : integer;
 begin
   if (gclk0'event and gclk0 = '1') then
-    if (sw1 = '1') then
+    if (sw2 = '1') then
       v_pace := 0;
       r <= '0';
     else
@@ -95,7 +95,7 @@ end process;
 i_counter_0: counter10
   port map (
       gclk0 => gclk0,
-      sw1   => sw1,
+      sw2   => sw2,
       e_in  => s_e_in_to_0,
       c_in  => s_c_in_to_0,
       c_out => s_c_out_from_0,
@@ -105,7 +105,7 @@ i_counter_0: counter10
 i_counter_1: counter10
   port map (
       gclk0 => gclk0,
-      sw1   => sw1,
+      sw2   => sw2,
       e_in  => s_e_in_to_1,
       c_in  => s_c_in_to_1,
       c_out => s_c_out_from_1,
@@ -115,7 +115,7 @@ i_counter_1: counter10
 i_counter_2: counter10
   port map (
       gclk0 => gclk0,
-      sw1   => sw1,
+      sw2   => sw2,
       e_in  => s_e_in_to_2,
       c_in  => s_c_in_to_2,
       c_out => s_c_out_from_2,
@@ -142,7 +142,7 @@ s_c_in_to_2 <= '1';
 
 term_proc: process
 begin
-  wait until (sw1 = '0');
+  wait until (sw2 = '0');
   wait until ((s_cnt_0 = "1001") and (s_cnt_1 = "1001") and (s_cnt_2 = "1001"));
   wait until (s_cnt_0 = "0000");
   wait until ((s_cnt_0 = "1001") and (s_cnt_1 = "1001") and (s_cnt_2 = "1001"));
@@ -163,7 +163,7 @@ begin
     v_chk_value := (conv_integer(s_cnt_2)*100)
                  + (conv_integer(s_cnt_1)*10)
                  + conv_integer(s_cnt_0);
-    if (sw1 = '1') then
+    if (sw2 = '1') then
       c_error <= 0;
       c_compare <= 0;
     else

@@ -50,7 +50,7 @@ begin
   chk_proc : process (gclk0)
   begin
     if (gclk0'event and gclk0 = '1') then
-      if (c = "1010") then
+      if ((c = "1010") and (r = '1')) then
         ck <= not ck;
       end if;
     end if;
