@@ -18,13 +18,3 @@ Contents:
    04_vhdl
    05_try
    06_appendix
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
