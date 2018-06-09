@@ -1,9 +1,14 @@
 PREDEF:
 
 CHAPS:
-  - review.re
+  - 01_introduction.re
+  - 02_stopwatch.re
+  - 03_fpga.re
+  - 04_vhdl.re
+  - 05_try.re
 
 APPENDIX:
+  - 06_appendix.re
 
 POSTDEF:
 

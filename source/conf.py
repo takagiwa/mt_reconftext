@@ -54,7 +54,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Text of reconfigurable device'
-copyright = u'2016, Masayuki Takagiwa'
+copyright = u'2017, Masayuki Takagiwa'
 author = u'Masayuki Takagiwa'
 
 # The version info for the project you're documenting, acts as replacement for
