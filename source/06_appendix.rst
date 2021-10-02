@@ -36,3 +36,10 @@ HDL サンプル記述集
  昭晃堂/ 亀山充隆著
 
 
+連絡先
+========
+
+https://www.facebook.com/takagiwa
+
+https://twitter.com/takagiwa_m
+
