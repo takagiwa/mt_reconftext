@@ -1,7 +1,9 @@
 /build
+/build.bak
 /source/sources/work
 /source/sources/wokr
 /source/sources/*.ini
 /source/sources/*.wlf
 /source/sources/wlft*
 .DAV/
+/related_files/*.pdf
