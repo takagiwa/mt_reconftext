@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>知能ディジタル回路・設計</title>
+    
+    <link rel="stylesheet" href="_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> 
+  </head>
+  <body role="document">
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.xhtml" title="総合索引"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="01_introduction.xhtml" title="1. はじめに"
+             accesskey="N">次へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">Text of reconfigurable device 0.0.1 ドキュメント</a> &#187;</li> 
+      </ul>
+    </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="id1">
+<h1>知能ディジタル回路・設計</h1>
+<p>Contents:</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="01_introduction.xhtml">1. はじめに</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="01_introduction.xhtml#id2">1.1. 受講にあたって</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="02_stopwatch.xhtml">2. ストップウォッチについて</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="02_stopwatch.xhtml#id2">2.1. 実装目標</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="03_fpga.xhtml">3. FPGA について</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="03_fpga.xhtml#hdl">3.1. HDL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_fpga.xhtml#veriloghdl-vhdl">3.2. VerilogHDL と VHDL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_fpga.xhtml#id1">3.3. 高位合成</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="04_vhdl.xhtml">4. VHDL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="04_vhdl.xhtml#id1">4.1. 基本形</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="04_vhdl.xhtml#id2">4.1.1. 解説</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="04_vhdl.xhtml#entity">4.1.1.1. entity とその周辺</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="04_vhdl.xhtml#id3">4.1.2. ファイルとの関係</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="04_vhdl.xhtml#id4">4.2. 信号の種類</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="04_vhdl.xhtml#std-logic">4.2.1. std_logic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_vhdl.xhtml#std-logic-vector">4.2.2. std_logic_vector</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_vhdl.xhtml#integer">4.2.3. integer</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="04_vhdl.xhtml#id8">4.3. ポート宣言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_vhdl.xhtml#id9">4.4. シグナル宣言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_vhdl.xhtml#id10">4.5. 値の代入</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_vhdl.xhtml#variable">4.6. もう一つの信号 variable と代入</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="05_try.xhtml">5. 演習</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="05_try.xhtml#id2">5.1. 注意事項</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_try.xhtml#id3">5.2. 論理演算</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="05_try.xhtml#id4">5.2.1. 演習</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="05_try.xhtml#id5">5.3. 数値演算</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="05_try.xhtml#id6">5.3.1. 演習</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="05_try.xhtml#when-else">5.4. 条件分岐 when ～ else ～</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="05_try.xhtml#id7">5.4.1. 演習</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="05_try.xhtml#with-select-when">5.5. 条件分岐 with ～ select ～ when ～</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="05_try.xhtml#id8">5.5.1. 演習</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="05_try.xhtml#process">5.6. process 文</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_try.xhtml#if">5.7. フリップフロップの基本と if 文</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="05_try.xhtml#id9">5.7.1. シミュレーション</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_try.xhtml#id10">5.7.2. 同期、非同期</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_try.xhtml#id11">5.7.3. if 文</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_try.xhtml#id12">5.7.4. マルチソース</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_try.xhtml#process-if">5.7.5. process 文、if 文によるフリップフロップの記述のお約束</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_try.xhtml#id13">5.7.6. 演習</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_try.xhtml#id14">5.7.7. 課題</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="05_try.xhtml#id15">5.8. カウンタ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_try.xhtml#t">5.9. 分周回路と T フリップフロップ</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="05_try.xhtml#id16">5.9.1. 分周回路</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_try.xhtml#id17">5.9.2. 課題</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="05_try.xhtml#id18">5.10. 積分回路とチャタリング除去</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="05_try.xhtml#id19">5.10.1. シミュレーション</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="05_try.xhtml#id20">5.11. 微分回路</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="05_try.xhtml#id21">5.11.1. 演習</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="05_try.xhtml#id22">5.12. １０進カウンタ</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="05_try.xhtml#id23">5.12.1. 課題</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="05_try.xhtml#id24">5.13. 階層設計</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="05_try.xhtml#id25">5.13.1. シミュレーション &amp; 演習</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="05_try.xhtml#case-when">5.14. 状態遷移と、条件分岐 case ～ when ～</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_try.xhtml#id26">5.15. 条件分岐 case ～ when ～</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="05_try.xhtml#id27">5.15.1. 演習</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="05_try.xhtml#id28">5.16. ストップウォッチ</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="05_try.xhtml#id29">5.16.1. 課題：最小限の構成</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="05_try.xhtml#id30">5.16.1.1. ヒント</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="05_try.xhtml#id31">5.16.2. 課題：応用</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="05_try.xhtml#id32">5.16.2.1. ヒント</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="05_try.xhtml#id33">5.16.3. その他課題</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="06_appendix.xhtml">6. 付録</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="06_appendix.xhtml#id2">6.1. 参考情報</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables</h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.xhtml"><span class="std std-ref">索引</span></a></li>
+<li><a class="reference internal" href="py-modindex.xhtml"><span class="std std-ref">モジュール索引</span></a></li>
+<li><a class="reference internal" href="search.xhtml"><span class="std std-ref">検索ページ</span></a></li>
+</ul>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, Masayuki Takagiwa.
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.6 で生成しました。
+    </div>
+  </body>
+</html>

@@ -1,0 +1,506 @@
+<?xml version="1.0"?>
+<ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+  <head>
+    <meta name="dtb:uid" content="unknown"/>
+    <meta name="dtb:depth" content="3"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+  <docTitle>
+    <text>Text of reconfigurable device</text>
+  </docTitle>
+  <navMap>    
+    <navPoint id="navPoint1" playOrder="1">
+      <navLabel>
+        <text>知能ディジタル回路・設計</text>
+      </navLabel>
+      <content src="index.xhtml" />  
+    </navPoint>
+    <navPoint id="navPoint2" playOrder="2">
+      <navLabel>
+        <text>はじめに</text>
+      </navLabel>
+      <content src="01_introduction.xhtml" />  
+      <navPoint id="navPoint3" playOrder="2">
+        <navLabel>
+          <text>はじめに</text>
+        </navLabel>
+        <content src="01_introduction.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint4" playOrder="3">
+        <navLabel>
+          <text>受講にあたって</text>
+        </navLabel>
+        <content src="01_introduction.xhtml#id2" />  
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint5" playOrder="4">
+      <navLabel>
+        <text>ストップウォッチについて</text>
+      </navLabel>
+      <content src="02_stopwatch.xhtml" />  
+      <navPoint id="navPoint6" playOrder="4">
+        <navLabel>
+          <text>ストップウォッチについて</text>
+        </navLabel>
+        <content src="02_stopwatch.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint7" playOrder="5">
+        <navLabel>
+          <text>実装目標</text>
+        </navLabel>
+        <content src="02_stopwatch.xhtml#id2" />  
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint8" playOrder="6">
+      <navLabel>
+        <text>FPGA について</text>
+      </navLabel>
+      <content src="03_fpga.xhtml" />  
+      <navPoint id="navPoint9" playOrder="6">
+        <navLabel>
+          <text>FPGA について</text>
+        </navLabel>
+        <content src="03_fpga.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint10" playOrder="7">
+        <navLabel>
+          <text>HDL</text>
+        </navLabel>
+        <content src="03_fpga.xhtml#hdl" />  
+      </navPoint>
+      <navPoint id="navPoint11" playOrder="8">
+        <navLabel>
+          <text>VerilogHDL と VHDL</text>
+        </navLabel>
+        <content src="03_fpga.xhtml#veriloghdl-vhdl" />  
+      </navPoint>
+      <navPoint id="navPoint12" playOrder="9">
+        <navLabel>
+          <text>高位合成</text>
+        </navLabel>
+        <content src="03_fpga.xhtml#id1" />  
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint13" playOrder="10">
+      <navLabel>
+        <text>VHDL</text>
+      </navLabel>
+      <content src="04_vhdl.xhtml" />  
+      <navPoint id="navPoint14" playOrder="10">
+        <navLabel>
+          <text>VHDL</text>
+        </navLabel>
+        <content src="04_vhdl.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint15" playOrder="11">
+        <navLabel>
+          <text>基本形</text>
+        </navLabel>
+        <content src="04_vhdl.xhtml#id1" />  
+        <navPoint id="navPoint16" playOrder="11">
+          <navLabel>
+            <text>基本形</text>
+          </navLabel>
+          <content src="04_vhdl.xhtml#id1" />  
+        </navPoint>
+        <navPoint id="navPoint17" playOrder="12">
+          <navLabel>
+            <text>解説</text>
+          </navLabel>
+          <content src="04_vhdl.xhtml#id2" />  
+        </navPoint>
+        <navPoint id="navPoint18" playOrder="13">
+          <navLabel>
+            <text>ファイルとの関係</text>
+          </navLabel>
+          <content src="04_vhdl.xhtml#id3" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint19" playOrder="14">
+        <navLabel>
+          <text>信号の種類</text>
+        </navLabel>
+        <content src="04_vhdl.xhtml#id4" />  
+        <navPoint id="navPoint20" playOrder="14">
+          <navLabel>
+            <text>信号の種類</text>
+          </navLabel>
+          <content src="04_vhdl.xhtml#id4" />  
+        </navPoint>
+        <navPoint id="navPoint21" playOrder="15">
+          <navLabel>
+            <text>std_logic</text>
+          </navLabel>
+          <content src="04_vhdl.xhtml#std-logic" />  
+        </navPoint>
+        <navPoint id="navPoint22" playOrder="16">
+          <navLabel>
+            <text>std_logic_vector</text>
+          </navLabel>
+          <content src="04_vhdl.xhtml#std-logic-vector" />  
+        </navPoint>
+        <navPoint id="navPoint23" playOrder="17">
+          <navLabel>
+            <text>integer</text>
+          </navLabel>
+          <content src="04_vhdl.xhtml#integer" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint24" playOrder="18">
+        <navLabel>
+          <text>ポート宣言</text>
+        </navLabel>
+        <content src="04_vhdl.xhtml#id8" />  
+      </navPoint>
+      <navPoint id="navPoint25" playOrder="19">
+        <navLabel>
+          <text>シグナル宣言</text>
+        </navLabel>
+        <content src="04_vhdl.xhtml#id9" />  
+      </navPoint>
+      <navPoint id="navPoint26" playOrder="20">
+        <navLabel>
+          <text>値の代入</text>
+        </navLabel>
+        <content src="04_vhdl.xhtml#id10" />  
+      </navPoint>
+      <navPoint id="navPoint27" playOrder="21">
+        <navLabel>
+          <text>もう一つの信号 variable と代入</text>
+        </navLabel>
+        <content src="04_vhdl.xhtml#variable" />  
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint28" playOrder="22">
+      <navLabel>
+        <text>演習</text>
+      </navLabel>
+      <content src="05_try.xhtml" />  
+      <navPoint id="navPoint29" playOrder="22">
+        <navLabel>
+          <text>演習</text>
+        </navLabel>
+        <content src="05_try.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint30" playOrder="23">
+        <navLabel>
+          <text>注意事項</text>
+        </navLabel>
+        <content src="05_try.xhtml#id2" />  
+      </navPoint>
+      <navPoint id="navPoint31" playOrder="24">
+        <navLabel>
+          <text>論理演算</text>
+        </navLabel>
+        <content src="05_try.xhtml#id3" />  
+        <navPoint id="navPoint32" playOrder="24">
+          <navLabel>
+            <text>論理演算</text>
+          </navLabel>
+          <content src="05_try.xhtml#id3" />  
+        </navPoint>
+        <navPoint id="navPoint33" playOrder="25">
+          <navLabel>
+            <text>演習</text>
+          </navLabel>
+          <content src="05_try.xhtml#id4" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint34" playOrder="26">
+        <navLabel>
+          <text>数値演算</text>
+        </navLabel>
+        <content src="05_try.xhtml#id5" />  
+        <navPoint id="navPoint35" playOrder="26">
+          <navLabel>
+            <text>数値演算</text>
+          </navLabel>
+          <content src="05_try.xhtml#id5" />  
+        </navPoint>
+        <navPoint id="navPoint36" playOrder="27">
+          <navLabel>
+            <text>演習</text>
+          </navLabel>
+          <content src="05_try.xhtml#id6" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint37" playOrder="28">
+        <navLabel>
+          <text>条件分岐 when ～ else ～</text>
+        </navLabel>
+        <content src="05_try.xhtml#when-else" />  
+        <navPoint id="navPoint38" playOrder="28">
+          <navLabel>
+            <text>条件分岐 when ～ else ～</text>
+          </navLabel>
+          <content src="05_try.xhtml#when-else" />  
+        </navPoint>
+        <navPoint id="navPoint39" playOrder="29">
+          <navLabel>
+            <text>演習</text>
+          </navLabel>
+          <content src="05_try.xhtml#id7" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint40" playOrder="30">
+        <navLabel>
+          <text>条件分岐 with ～ select ～ when ～</text>
+        </navLabel>
+        <content src="05_try.xhtml#with-select-when" />  
+        <navPoint id="navPoint41" playOrder="30">
+          <navLabel>
+            <text>条件分岐 with ～ select ～ when ～</text>
+          </navLabel>
+          <content src="05_try.xhtml#with-select-when" />  
+        </navPoint>
+        <navPoint id="navPoint42" playOrder="31">
+          <navLabel>
+            <text>演習</text>
+          </navLabel>
+          <content src="05_try.xhtml#id8" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint43" playOrder="32">
+        <navLabel>
+          <text>process 文</text>
+        </navLabel>
+        <content src="05_try.xhtml#process" />  
+      </navPoint>
+      <navPoint id="navPoint44" playOrder="33">
+        <navLabel>
+          <text>フリップフロップの基本と if 文</text>
+        </navLabel>
+        <content src="05_try.xhtml#if" />  
+        <navPoint id="navPoint45" playOrder="33">
+          <navLabel>
+            <text>フリップフロップの基本と if 文</text>
+          </navLabel>
+          <content src="05_try.xhtml#if" />  
+        </navPoint>
+        <navPoint id="navPoint46" playOrder="34">
+          <navLabel>
+            <text>シミュレーション</text>
+          </navLabel>
+          <content src="05_try.xhtml#id9" />  
+        </navPoint>
+        <navPoint id="navPoint47" playOrder="35">
+          <navLabel>
+            <text>同期、非同期</text>
+          </navLabel>
+          <content src="05_try.xhtml#id10" />  
+        </navPoint>
+        <navPoint id="navPoint48" playOrder="36">
+          <navLabel>
+            <text>if 文</text>
+          </navLabel>
+          <content src="05_try.xhtml#id11" />  
+        </navPoint>
+        <navPoint id="navPoint49" playOrder="37">
+          <navLabel>
+            <text>マルチソース</text>
+          </navLabel>
+          <content src="05_try.xhtml#id12" />  
+        </navPoint>
+        <navPoint id="navPoint50" playOrder="38">
+          <navLabel>
+            <text>process 文、if 文によるフリップフロップの記述のお約束</text>
+          </navLabel>
+          <content src="05_try.xhtml#process-if" />  
+        </navPoint>
+        <navPoint id="navPoint51" playOrder="39">
+          <navLabel>
+            <text>演習</text>
+          </navLabel>
+          <content src="05_try.xhtml#id13" />  
+        </navPoint>
+        <navPoint id="navPoint52" playOrder="40">
+          <navLabel>
+            <text>課題</text>
+          </navLabel>
+          <content src="05_try.xhtml#id14" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint53" playOrder="41">
+        <navLabel>
+          <text>カウンタ</text>
+        </navLabel>
+        <content src="05_try.xhtml#id15" />  
+      </navPoint>
+      <navPoint id="navPoint54" playOrder="42">
+        <navLabel>
+          <text>分周回路と T フリップフロップ</text>
+        </navLabel>
+        <content src="05_try.xhtml#t" />  
+        <navPoint id="navPoint55" playOrder="42">
+          <navLabel>
+            <text>分周回路と T フリップフロップ</text>
+          </navLabel>
+          <content src="05_try.xhtml#t" />  
+        </navPoint>
+        <navPoint id="navPoint56" playOrder="43">
+          <navLabel>
+            <text>分周回路</text>
+          </navLabel>
+          <content src="05_try.xhtml#id16" />  
+        </navPoint>
+        <navPoint id="navPoint57" playOrder="44">
+          <navLabel>
+            <text>課題</text>
+          </navLabel>
+          <content src="05_try.xhtml#id17" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint58" playOrder="45">
+        <navLabel>
+          <text>積分回路とチャタリング除去</text>
+        </navLabel>
+        <content src="05_try.xhtml#id18" />  
+        <navPoint id="navPoint59" playOrder="45">
+          <navLabel>
+            <text>積分回路とチャタリング除去</text>
+          </navLabel>
+          <content src="05_try.xhtml#id18" />  
+        </navPoint>
+        <navPoint id="navPoint60" playOrder="46">
+          <navLabel>
+            <text>シミュレーション</text>
+          </navLabel>
+          <content src="05_try.xhtml#id19" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint61" playOrder="47">
+        <navLabel>
+          <text>微分回路</text>
+        </navLabel>
+        <content src="05_try.xhtml#id20" />  
+        <navPoint id="navPoint62" playOrder="47">
+          <navLabel>
+            <text>微分回路</text>
+          </navLabel>
+          <content src="05_try.xhtml#id20" />  
+        </navPoint>
+        <navPoint id="navPoint63" playOrder="48">
+          <navLabel>
+            <text>演習</text>
+          </navLabel>
+          <content src="05_try.xhtml#id21" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint64" playOrder="49">
+        <navLabel>
+          <text>１０進カウンタ</text>
+        </navLabel>
+        <content src="05_try.xhtml#id22" />  
+        <navPoint id="navPoint65" playOrder="49">
+          <navLabel>
+            <text>１０進カウンタ</text>
+          </navLabel>
+          <content src="05_try.xhtml#id22" />  
+        </navPoint>
+        <navPoint id="navPoint66" playOrder="50">
+          <navLabel>
+            <text>課題</text>
+          </navLabel>
+          <content src="05_try.xhtml#id23" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint67" playOrder="51">
+        <navLabel>
+          <text>階層設計</text>
+        </navLabel>
+        <content src="05_try.xhtml#id24" />  
+        <navPoint id="navPoint68" playOrder="51">
+          <navLabel>
+            <text>階層設計</text>
+          </navLabel>
+          <content src="05_try.xhtml#id24" />  
+        </navPoint>
+        <navPoint id="navPoint69" playOrder="52">
+          <navLabel>
+            <text>演習</text>
+          </navLabel>
+          <content src="05_try.xhtml#id25" />  
+        </navPoint>
+        <navPoint id="navPoint70" playOrder="53">
+          <navLabel>
+            <text>シミュレーション &amp; 演習</text>
+          </navLabel>
+          <content src="05_try.xhtml#id26" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint71" playOrder="54">
+        <navLabel>
+          <text>状態遷移と、条件分岐 case ～ when ～</text>
+        </navLabel>
+        <content src="05_try.xhtml#case-when" />  
+      </navPoint>
+      <navPoint id="navPoint72" playOrder="55">
+        <navLabel>
+          <text>条件分岐 case ～ when ～</text>
+        </navLabel>
+        <content src="05_try.xhtml#id28" />  
+        <navPoint id="navPoint73" playOrder="55">
+          <navLabel>
+            <text>条件分岐 case ～ when ～</text>
+          </navLabel>
+          <content src="05_try.xhtml#id28" />  
+        </navPoint>
+        <navPoint id="navPoint74" playOrder="56">
+          <navLabel>
+            <text>演習</text>
+          </navLabel>
+          <content src="05_try.xhtml#id29" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint75" playOrder="57">
+        <navLabel>
+          <text>ストップウォッチ</text>
+        </navLabel>
+        <content src="05_try.xhtml#id30" />  
+        <navPoint id="navPoint76" playOrder="57">
+          <navLabel>
+            <text>ストップウォッチ</text>
+          </navLabel>
+          <content src="05_try.xhtml#id30" />  
+        </navPoint>
+        <navPoint id="navPoint77" playOrder="58">
+          <navLabel>
+            <text>課題：最小限の構成</text>
+          </navLabel>
+          <content src="05_try.xhtml#id31" />  
+        </navPoint>
+        <navPoint id="navPoint78" playOrder="59">
+          <navLabel>
+            <text>課題：応用</text>
+          </navLabel>
+          <content src="05_try.xhtml#id33" />  
+        </navPoint>
+        <navPoint id="navPoint79" playOrder="60">
+          <navLabel>
+            <text>その他課題</text>
+          </navLabel>
+          <content src="05_try.xhtml#id35" />  
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint80" playOrder="61">
+      <navLabel>
+        <text>付録</text>
+      </navLabel>
+      <content src="06_appendix.xhtml" />  
+      <navPoint id="navPoint81" playOrder="61">
+        <navLabel>
+          <text>付録</text>
+        </navLabel>
+        <content src="06_appendix.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint82" playOrder="62">
+        <navLabel>
+          <text>参考情報</text>
+        </navLabel>
+        <content src="06_appendix.xhtml#id2" />  
+      </navPoint>
+    </navPoint>
+  </navMap>
+</ncx>

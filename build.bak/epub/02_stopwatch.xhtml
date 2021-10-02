@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+  <head>
+    <meta charset="utf-8" />
+    <title>2. ストップウォッチについて</title>
+    <link rel="stylesheet" href="_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="id1">
+<h1><span class="section-number">2. </span>ストップウォッチについて</h1>
+<p>ディジタルタイプのストップウォッチの例を図に示します。通常「スタート・ストップ」「ラップ・リセット」の２つのボタンと、６桁程度の数字のディスプレイがあります。</p>
+<p>「スタート・ストップ」のボタンは、押す毎に「計時」の実行、停止が切り替わります。リセットしない限り、計時は停止した値から再開されます。</p>
+<p>「ラップ・リセット」は、停止時に押すと値がクリアされます。計時を行っているときに押すと、通常計時中は変化し続けている数字が停止しますが、計時は続けられています。</p>
+<p>実際にはここでは２つの動作があり、「スプリット」では値は引き続きカウントアップしていますが、「ラップ」ではラップボタンで計時は０から再開されます。</p>
+<p>数字のディスプレイは通常上位から２桁ずつ、分、秒、1/100 秒のカウントを表示します。</p>
+<div class="section" id="id2">
+<h2><span class="section-number">2.1. </span>実装目標</h2>
+<p>最低限の目標は以下の機能を VHDL で実装することです。</p>
+<dl class="simple">
+<dt>４桁の数字の表示</dt><dd><p>上位２桁は秒、下位２桁は1/100 秒です。</p>
+</dd>
+<dt>「スタート・ストップ」スイッチの動作</dt><dd><p>一つのスイッチで行います。</p>
+</dd>
+<dt>「ラップ・リセット」スイッチはリセット動作の実装</dt><dd><p>停止中に値のリセットが行えること。</p>
+</dd>
+</dl>
+<p>追加目標はラップ機能、スプリット機能の実装となります。</p>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>
