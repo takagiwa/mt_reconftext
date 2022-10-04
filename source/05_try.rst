@@ -21,8 +21,10 @@
 
 スイッチ入力に対して論理演算を行い、結果を LED に出力します。
 
-.. literalinclude:: sources/vhdl01.vhd
-  :language: vhdl
+.. only:: latex
+
+  .. literalinclude:: sources/vhdl01.vhd
+    :language: vhdl
 
 このコードで出力される回路は図のようなものになります。
 
@@ -57,8 +59,10 @@ LED に対してはデバイスから H を与えると消灯、L を与える�
 
 スイッチ入力に対して数値演算を行い、LED に表示します。
 
-.. literalinclude:: sources/vhdl02.vhd
-  :language: vhdl
+.. only:: latex
+
+  .. literalinclude:: sources/vhdl02.vhd
+    :language: vhdl
 
 スイッチの上位 (基板上左側) 4ビットと下位 (右側) 4ビットの演算を行います。LED の上位に加算の結果、下位に減算の結果が2進数で表示されます。
 
@@ -94,8 +98,10 @@ LED に対してはデバイスから H を与えると消灯、L を与える�
 
 条件分岐の書き方の一つ、when ～ else ～ の例です。
 
-.. literalinclude:: sources/vhdl03.vhd
-  :language: vhdl
+.. only:: latex
+
+  .. literalinclude:: sources/vhdl03.vhd
+    :language: vhdl
 
 sw8 を H レベルにしておくと、LED1 は sw2 の操作に従って点灯します。
 
@@ -136,8 +142,10 @@ sw8 が L レベルの場合は、LED1 は sw1 の操作に従って点灯しま
 
 条件分岐の書き方の一つ、with ～ select ～ when ～ の例です。
 
-.. literalinclude:: sources/vhdl04.vhd
-  :language: vhdl
+.. only:: latex
+
+  .. literalinclude:: sources/vhdl04.vhd
+    :language: vhdl
 
 sw7 と sw8 の設定により、LED の点滅を制御できるスイッチを切り替えられる回路です。
 
@@ -590,8 +598,10 @@ process 文の外か、if 文の中に入れましょう。
 
 D フリップフロップを作る
 
-.. literalinclude:: sources/vhdl05.vhd
-  :language: vhdl
+.. only:: latex
+
+  .. literalinclude:: sources/vhdl05.vhd
+    :language: vhdl
 
 ヒント
 
@@ -635,8 +645,10 @@ led1 には d の内容を出力しています。
 
 下記のソースコードに追記して、JK フリップフロップを作れ
 
-.. literalinclude:: sources/vhdl06.vhd
-  :language: vhdl
+.. only:: latex
+
+  .. literalinclude:: sources/vhdl06.vhd
+    :language: vhdl
 
 ２箇所の"put code below" から"put code above" の間にコードを書いてください。
 
@@ -703,8 +715,10 @@ led1 には d の内容を出力しています。
 
 プロジェクト名 vhdl07
 
-.. literalinclude:: sources/vhdl07.vhd
-  :language: vhdl
+.. only:: latex
+
+  .. literalinclude:: sources/vhdl07.vhd
+    :language: vhdl
 
 クロックはあらかじめ、32MHz を選択しておきます (JP3、JP4、JP5 のうち JP5 だけショートさせる) 。
 
@@ -748,8 +762,10 @@ LED には、上位 8bit のみ表示しています。
 
 プロジェクト名 vhdl08
 
-.. literalinclude:: sources/vhdl08.vhd
-  :language: vhdl
+.. only:: latex
+
+  .. literalinclude:: sources/vhdl08.vhd
+    :language: vhdl
 
 この中で c は10進数で0～3までカウントし、r にはそのうち３のときだけ '1' がセットされます。その反転による LED の点灯がされるため、gclk0 32MHz で４周期のうち１サイクルだけ点灯することになり、結果として単純に点灯している led2 に比べ led1 が暗くなります。
 
@@ -772,8 +788,10 @@ LED には、上位 8bit のみ表示しています。
 約２秒周期で led1 の点灯、消灯を繰り返す回路を作れ
  (約 1 秒点灯、約 1 秒消灯を繰り返す) 
 
-.. literalinclude:: sources/vhdl09.vhd
-  :language: vhdl
+.. only:: latex
+
+  .. literalinclude:: sources/vhdl09.vhd
+    :language: vhdl
 
 分周回路と T フリップフロップ (のような動作) を組み合わせて作成します。基板上、JP5 のジャンパをショートし、gclk0 の周波数を 32MHz に設定します。
 
@@ -980,8 +998,10 @@ r が、チャタリング除去後の信号で、s_switch よりは時間が短
 
 スイッチを往復させる毎に LED の点灯、消灯を切り替える回路を作る。
 
-.. literalinclude:: sources/vhdl10.vhd
-  :language: vhdl
+.. only:: latex
+
+  .. literalinclude:: sources/vhdl10.vhd
+    :language: vhdl
 
 diff proc とその直後の s への代入が微分回路になります。
 
@@ -999,10 +1019,17 @@ led1 が点滅する場合は誤りがある。
 
 プロセス文 div_proc が1秒を作る。それを利用してプロセス文 cnt_proc 内で signal c で0～9をカウントする。
 
-.. literalinclude:: sources/vhdl11.vhd
-  :language: vhdl
+.. only:: latex
+
+  .. literalinclude:: sources/vhdl11.vhd
+    :language: vhdl
 
 7セグメント LED の点灯パターンはコードの通りになる、LED の配置は図のようになっています。port に L を出力すると、電位差で電流が流れ LED が点灯します。
+
+.. only:: not latex
+
+ .. figure:: figure/figure26b.png
+  :align: center
 
 .. only:: latex
 
@@ -1087,8 +1114,10 @@ led1 が点滅する場合は誤りがある。
 
 counter10.vhd
 
-.. literalinclude:: sources/counter10.vhd
-  :language: vhdl
+.. only:: latex
+
+  .. literalinclude:: sources/counter10.vhd
+    :language: vhdl
 
 c_in は下の桁からの桁上げのリクエストを受け付けるポート、c_out は上の桁への桁上げのリクエストを出力するポートです。
 
@@ -1115,8 +1144,10 @@ e_in は H レベルが入るとカウントを行うポートです。
 
 ledconv.vhd
 
-.. literalinclude:: sources/ledconv.vhd
-  :language: vhdl
+.. only:: latex
+
+  .. literalinclude:: sources/ledconv.vhd
+    :language: vhdl
 
 sledxa から sledxg は７セグ LED の各端子に相当します。vhdl11b では1桁のみ使うため、sled1a ～ sled1g と対応させています。これが4桁になる場合、ledconv を4個用意し、sled1a ～ sled1g から sled4a ～ sled4g までに対応させます。
 
@@ -1125,10 +1156,17 @@ sledxa から sledxg は７セグ LED の各端子に相当します。vhdl11b �
 
 vhdl11b.vhd
 
-.. literalinclude:: sources/vhdl11b.vhd
-  :language: vhdl
+.. only:: latex
+
+  .. literalinclude:: sources/vhdl11b.vhd
+    :language: vhdl
 
 この状態で、ソースコードの関係は以下のようになります。
+
+.. only:: not latex
+
+ .. figure:: figure/figure27.png
+  :align: center
 
 .. only:: latex
 
@@ -1338,15 +1376,19 @@ ramen_stat には MAKE_READY_CUP など、定義した名前を代入したり�
 
 swfilter.vhd
 
-.. literalinclude:: sources/swfilter.vhd
-  :language: vhdl
+.. only:: latex
+
+  .. literalinclude:: sources/swfilter.vhd
+    :language: vhdl
 
 プロジェクト名 vhdl12
 
 vhdl12.vhd
 
-.. literalinclude:: sources/vhdl12.vhd
-  :language: vhdl
+.. only:: latex
+
+  .. literalinclude:: sources/vhdl12.vhd
+    :language: vhdl
 
 case 文とは関係ありませんが、swfilter は sw にスイッチからの信号を接続し、sw out にチャタリング除去後の信号を出力する回路ブロックです。
 
